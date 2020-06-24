@@ -1,40 +1,14 @@
 
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Tarsiers
-## Female recognition in the film direction
+# Presence of female directors in film industry
 
-Project module 01
+Comparison between male and female directors with regards to popularity and award wins
 
+Contributors:
 - Ana Paula Detsch
 - Brian Meyer
 - Raphaela Sinanovic
-
-Data Analysis 03-20, Berlin, 04/10/2020
-
-
-## Content
-
-- [Project Description](#project-description)
-- [Questions & Hypotheses](#questions-hypotheses)
-- [Dataset](#dataset)
-- [Database](#database)
-- [Workflow](#workflow)
-- [Organization](#organization)
-- [Links](#links)
-
-
-## Project Description
-Women are underrepresented in many working areas, for example in the film industry. There are many female actors, but what about directing roles? 
-Using data research, inspection, cleaning and analysis we could analyze the women's presence in directring roles inside the film industry.
-
-
-## Questions & Hypotheses
-- How is the development of female vs. male award winners?
-- Is there a difference in the popularity of:
-    - female and male directed films?
-    - Female and male directors?
-        - And of those who won or were nominated?
 
 
 ## Dataset
@@ -50,7 +24,6 @@ Using data research, inspection, cleaning and analysis we could analyze the wome
         - https://www.kaggle.com/unanimad/golden-globe-awards
   
  - We also added manually the winners of Acamedy Awards in the category Director for the last 4 years (2016-2019)
-     - source: 
      
 ### 1.2. Web scraping
 - Web scraping to create a list of directors names.
@@ -67,7 +40,6 @@ Using data research, inspection, cleaning and analysis we could analyze the wome
 ## Database
 
 To be able to answer our questions we combined our datsets into one main dataset: df_tmdb.pkl
-
 
 - To be able to compare the award nominees and winners with the gender of the directors, we first merged the golden globe data with the academy awards winners --> "Merging_awards.ipynb"
 - To extract only the directors from the TMDB-API, we input the list of directors from wikipedia into the API Requests via a for loop, amounting in over 2000 requests "Web Scraping Wikipedia and API Requests to TMDB.ipynb" -->
